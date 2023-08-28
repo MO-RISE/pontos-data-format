@@ -1,17 +1,5 @@
 # Tags
 
-These are the valid tags in use by the [PONTOS project](https://pontos.ri.se).
-
-The tags follow the general format:
-
-In the MQTT topic structure: `../<entity>_<property>_<unit>/<id>`
-
-In database/REST api: `<entity>_<property>_<unit>_<id>`
-
-I.e the `<id>` has a separate topic level in the MQTT topic structure but is concatenated when persisted in the database and provided in the REST api.
-
-`<entity>`, `<property>` and `<unit>` are all defined by the following list of tags, whereas `<id>` is to be replaced with an integer index starting from 1 by the data producer.
-
 ## Anemometer
 
 ### **`anemometer_aws_mps_<id>`**
@@ -40,7 +28,7 @@ State of charge (percent) of battery.
 State of charge (kWh) of battery.
 
 ### **`battery_power_kw_<id>`**
-Power flow (kW) into the battery. Charge is positive, discharge is negative.
+Power flow (kW) into the battery. Charge is negative, discharge is positive.
 
 ### **`battery_temperature_deg_<id>`**
 Temperature (deg) of battery.
