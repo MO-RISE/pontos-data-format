@@ -6,6 +6,6 @@ This repository contains the valid data "tags" in use by the [PONTOS project](ht
 
 The tags follow the general format: `<entity>_<property>_<unit>` where `entity`, `property` and `unit` are constrained to alphanumeric characters.
 
-This repository adheres to semantic versioning.
+This repository adheres to semantic versioning. The list of releases are available at https://github.com/MO-RISE/pontos-tags/tags
 
 
