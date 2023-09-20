@@ -89,6 +89,11 @@ Engine temperature (temperature) of main engine.
 ### **`enginemain_boostpressure_bar`**
 Engine boost pressure (bar) of main engine.
 
+## Shaft generator
+
+### **`shaftgenerator_power_kw`**
+Power output (kW) of the shaft generator.
+
 ## Fuel tank
 
 ### **`fueltank_level_pct`**
