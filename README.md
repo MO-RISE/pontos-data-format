@@ -31,7 +31,7 @@ The Pontos Data Format specifies the following:
 ### Example configuration of pontos-data-ingestor
 The specification outlined above assumes the following configuration of the `pontos-data-ingestor`:
 ```yaml
-TOPIC_PARSER_FORMAT=PONTOS/{vessel_id:w}/{tag:w}/{index:d}
+TOPIC_PARSER_FORMAT=PONTOS_INGRESS/{vessel_id:w}/{tag:w}/{index:d}
 PAYLOAD_MAP_FORMAT=timestamp=timestamp,value=value
 ```
 
