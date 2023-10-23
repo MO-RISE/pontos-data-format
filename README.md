@@ -16,8 +16,8 @@ The Pontos Data Format specifies the following:
   {root_namespace}/{vessel_id}/{tag}/{index}
   ```
   where:
-  * `root_namespace` can be either `PONTOS_INGRESS` (used for data ingress) or `PONTOS_EGRESS` (used for data egress) as imposed by Pontos Hub
-  * `vessel_id` must be a unique identifier for the vessel and take the format `<type>_<value>`. `<type>` must be one of `name`, `imo` or `mmsi` with `<value>`s as vessel name, vessel IMO number or vessel MMSI number respectively.
+  * `root_namespace` is either `PONTOS_INGRESS` (used for data ingress) or `PONTOS_EGRESS` (used for data egress) as imposed by Pontos Hub
+  * `vessel_id` is a unique identifier for the vessel and take the format `<type>_<value>`. `<type>` is one of `name`, `imo` or `mmsi` with `<value>`s as vessel name, vessel IMO number or vessel MMSI number respectively.
   * `tag` is one of a finite set of pre-agreed strings encoding information about the data value in the payload. The tags follow the general format: `<entity>_<property>_<unit>` where `entity`, `property` and `unit` are constrained to alphanumeric characters. This repository contains the valid data "tags" [here](./tags.md)
   * `index` is an unsigned integer in the integer interval [1..+∞)
 * Payloads are JSON with the following format
